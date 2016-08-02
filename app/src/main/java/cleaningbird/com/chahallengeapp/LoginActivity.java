@@ -1,14 +1,15 @@
 package cleaningbird.com.chahallengeapp;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
-
+/**
+ * Created by youngjae on 2016-08-02.
+ */
+public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login_page);
     }
 }

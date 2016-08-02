@@ -11,55 +11,58 @@
 
 
     <EditText
+        android:id="@+id/usernameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/username_input"
-        android:textColorHint="@color/colorLightGray"
-        android:id="@+id/editText3"
-        android:backgroundTint="@color/colorBlue"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="56dp"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:inputType="textPersonName"
+        android:hint="@string/username_input"
+        android:textColorHint="@color/colorLightGray"
+        android:backgroundTint="@color/colorBlue"
+         />
 
     <EditText
+        android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="@string/password_input"
-        android:textColorHint="@color/colorLightGray"
-        android:id="@+id/editText"
-        android:fontFamily=""
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/usernameText"
         android:backgroundTint="@color/colorBlue"
         android:layout_alignParentStart="true"
         android:layout_marginTop="40dp"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:inputType="textPassword"
+        android:hint="@string/password_input"
+        android:textColorHint="@color/colorLightGray"
+        android:fontFamily=""
+         />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/forgotPasswordButton"
+        android:style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordText"
         android:text="@string/forgot_pass_button"
         android:background="@null"
         android:textSize="12sp"
         android:textAllCaps="false"
-        android:id="@+id/button"
-        android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
         android:textColor="@color/colorBlue" />
 
     <Button
+        android:id="@+id/loginButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotPasswordButton"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_corners_button"
         android:text="@string/login_button"
         android:textStyle="bold"
         android:textColor="#ffff"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+         />
 
 
 </RelativeLayout>
